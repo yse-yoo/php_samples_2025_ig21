@@ -1,9 +1,9 @@
 <?php
 class Database
 {
-    private static ?PDO $pdo = null;
+    private static $pdo = null;
 
-    public static function getInstance(): PDO
+    public static function getInstance()
     {
         if (self::$pdo === null) {
             // 設定読み込み
