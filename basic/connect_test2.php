@@ -18,7 +18,12 @@ $db = Database::getInstance();
 </head>
 
 <body>
-
+    <h1>DB接続確認</h1>
+    <div>
+        <?php
+        var_dump($db);
+        ?>
+    </div>
 </body>
 
 </html>
