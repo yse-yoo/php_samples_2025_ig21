@@ -6,3 +6,6 @@ SELECT * FROM tweets WHERE user_id = 1;
 SELECT users.display_name FROM users 
 JOIN tweets ON users.id = tweets.user_id 
 WHERE tweets.id = 1;
+
+SELECT users.display_name, tweets.message, tweets.created_at FROM users 
+JOIN tweets ON users.id = tweets.user_id;
