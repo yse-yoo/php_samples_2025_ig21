@@ -72,11 +72,8 @@ function update($id, $password)
 
         <h2 class="py-2 text-2xl">結果</h2>
         <?php if (!empty($result)): ?>
-            <div class="flex flex-col gap-4 text-gray-800 bg-gray-100 p-4 rounded-md">
-                <div>
-                    <span class="block text-sm text-gray-500">ユーザID</span>
-                    <div class="text-lg"><?= $result?></div>
-                </div>
+            <div class="bg-green-300 p-4">
+                成功
             </div>
         <?php endif ?>
     </main>
